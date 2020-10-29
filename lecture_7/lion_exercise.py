@@ -11,13 +11,23 @@ class Lion:
 
 class Zoo:
     def __init__(self):
-        self.lions = []
+        self.lions = {}
 
-    def add_lion(self, lion_name):
-        lion = Lion(lion_name)
-        self.lions.append(lion)
+    def add_lion(self, lion):
+        # Lion is an object
+        self.lions[lion.name] = lion
+
+    def remove_lion(self, lion_name):
+        if lion_name in self.lions:
+            del self.lions[lion_name]
+
+    def get_lion_amount(self):
+        return len(self.lions)
 
 
+zoo = Zoo()
+ethan_lion = Lion('Ethan')
+zoo.add_lion(ethan_lion)
 ethan = Lion('Ethan')
 mor = Lion('Mor')
 ethan.rawr()
