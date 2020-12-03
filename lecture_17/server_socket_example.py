@@ -10,10 +10,8 @@ serversocket.listen(5)
 print('Starting to listen')
 (clientsocket, address) = serversocket.accept()
 print('Accepted client')
-while True:
-    msg = clientsocket.recv(1024)
-    if msg == b'':
-        break
-    else:
-        print('got message : ' + msg.decode())
-        clientsocket.send(b'This is server sending message to client!')
+clientsocket.send(b'Hello!')
+msg_as_binary = clientsocket.recv(1024)
+msg = msg_as_binary.decode()
+print(msg)
+clientsocket.send((msg + " sounds very smart!").encode())
