@@ -15,5 +15,11 @@ def hello():
     return 'Hello world!'
 
 
+@app.route('/bla_bla/<username>')
+def bla(username):
+    print('This is the user name : {}'.format(username))
+    return 'Hello to you Mr. {}'.format(username)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
