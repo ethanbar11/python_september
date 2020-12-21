@@ -11,7 +11,7 @@ app = Flask(__name__)
 #     return render_template('index.html') \
 #  \
 #  \
-@app.route('/hello')
+@app.route('/hello', methods=['GET', 'POST'])
 def hello():
     return 'Hello world!'
 
