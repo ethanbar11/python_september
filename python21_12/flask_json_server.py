@@ -21,7 +21,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/home.html', methods=['POST'])
+@app.route('/home.html', methods=['POST', 'GET'])
 def home():
     if request.method == 'POST':
         name = request.form['name']
