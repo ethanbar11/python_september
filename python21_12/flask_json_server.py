@@ -25,8 +25,10 @@ def index():
 def home():
     if request.method == 'POST':
         name = request.form['name']
-        email = request.form['email']
-        print('Your name is {} and your email is : {}'.format(name, email))
+        address = request.form['address']
+        amount = request.form['amount']
+        topping = request.form['topping']
+        print('name : {} address :{} amount : {} topping : {}'.format(name,address,amount,topping))
     return render_template('home.html')
 
 

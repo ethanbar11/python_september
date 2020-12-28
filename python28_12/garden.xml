@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<garden>
+	<plant>
+		<name>Cactus</name>
+		<price> 5.95$ </price>
+		<description> Hello! </description>
+		<color> Green </color>
+	</plant>
+	<plant>
+		<name>Rose</name>
+		<price> 8$ </price>
+		<description> Bli Bla </description>
+		<color> Red </color>
+	</plant>
+	<plant>
+		<name>Oak</name>
+		<price> 200$ </price>
+		<description> Im Tall! </description>
+		<color> Brown </color>
+	</plant>
+	<animal>
+		<name>Mouse</name>
+		<price> 1$ </price>
+		<description> HAM HAM HAM </description>
+		<color> White </color>
+	</animal>
+</garden>
