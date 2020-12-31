@@ -23,4 +23,8 @@ def create_board():
     board = [[nums[pattern(r, c)] for c in cols] for r in rows]
     return board
 
-print(create_board())
+board=create_board()
+print(board)
+print(board[1])
+print(board[1][0])
+# print(board)
